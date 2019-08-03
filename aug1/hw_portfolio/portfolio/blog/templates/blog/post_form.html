@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{%load static %}
+{%block body %}
+<section id = "about" class = "about-section text-white">
+    <form>
+        {% csrf_token%}
+            <div class="form-group form">
+              <label>Title</label>
+              <input type="title" class="form-control">
+            </div>
+            <div class="form-group rows = 5">
+              <label>Body</label>
+              <textarea class="form-control" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+</section>
+{% endblock %}

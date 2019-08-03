@@ -1,0 +1,12 @@
+#active{
+    color: blue;
+}
+.nav__item:hover{
+color: rebeccapurple;
+}
+
+@media(max-width: 500px){
+    .nav__item{
+        color: aqua;
+    }
+}
