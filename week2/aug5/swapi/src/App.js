@@ -16,9 +16,15 @@ function App() {
     )
   }, [page])
 
+  const formattedPopulation =
+  population === 'unknown' ? chalk.red(population) : chalk.blue(population);
+
+
   return (
+  
   <div className="App">
     Star Wars API Reading
+    <h1>formattedPopulation(page.planet.population)</h1>
     <input type = "number" value = {page} onChange = {(e) => setPage(e.target.value)} min = "1" max = "7" />
     {planetData}
   </div>
