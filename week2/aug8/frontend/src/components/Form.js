@@ -9,6 +9,7 @@ function Form (){
             backers: 0,
             pledged: 0,
             created: "",
+            date: "",
         },
         sendData
     );

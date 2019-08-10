@@ -8,10 +8,6 @@ function Blog(){
 
 
     const [blog, setBlog] = useState([
-        // {
-        //     tite: "Title",
-        //     post: "Debug to see if ^Title is apearing "
-        // },
         {
             title: "Title2",
             post: "The second blog post"
