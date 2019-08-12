@@ -1,0 +1,12 @@
+<!-- templates/signup.html -->
+{% extends "home.html" %}
+{% block body %}
+<section id = "about" class = "about-section text-white">
+  <h2>Sign up</h2>
+  <form method="post" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+  </form>
+</section>
+{% endblock %}

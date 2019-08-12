@@ -1,0 +1,44 @@
+// import Template1 from '../imgs/template1.png';
+import React from 'react';
+
+
+function createResume(props){
+    return (
+
+        <div>
+        <p><strong>{props.info.name}</strong></p>
+        <p>{props.info.email} {props.info.address}, {props.info.city}, {props.info.state}  {props.info.phone}</p>
+        <p><strong><em>OBJECTIVE </em></strong></p>
+        <blockquote>
+        <p>{props.info.Goal}</p>
+        </blockquote>
+        <p><strong><em>EDUCATION</em></strong></p>
+        <blockquote>
+        <p><strong>{props.education.school_name}</strong>{props.education.date_attended}</p>
+        <p>{props.education.level}</p>
+        </blockquote>
+        <blockquote>
+        <p><strong>Skill:</strong>{props.skills} </p>
+        </blockquote>
+        {/* <p><strong><em>EXPERIENCE</em></strong></p>
+        <p><strong>{props.experience.company_name}</strong>{props.experience.date_attended}</p>
+        <p><strong>=== {props.experience.position_title} </strong></p>
+        <blockquote>
+        <p>{props.experience.description}</p>
+        </blockquote>
+        <p><strong><em>PROJECTS</em></strong></p>
+        <p><strong>{props.project.project_name}</strong>{props.project.projectDate}</p>
+        <blockquote>
+        <p>{props.project.projectDescription}</p>
+        </blockquote>
+        <p><strong><em>ACTIVITIES and ACHIEVEMENTS</em></strong></p>
+        <blockquote>
+        <p><strong>{props.achivement.name}</strong>{props.achivement.date}</p>
+        <p><strong>{props.achivement.description}</strong></p>
+        </blockquote> */}
+        </div>
+
+    );
+}
+
+export default createResume;

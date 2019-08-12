@@ -41,16 +41,16 @@ function Form (){
         },
         sendData
     );
-    const [experience, experienceSubmit, experienceChange]=useForm(
-        {
-            company_name: "",
-            position_title: "",
-            date_attended: "",
-            description: "",
+    // const [experience, experienceSubmit, experienceChange]=useForm(
+    //     {
+    //         company_name: "",
+    //         position_title: "",
+    //         date_attended: "",
+    //         description: "",
 
-        },
-        sendData
-    );
+    //     },
+    //     sendData
+    // );
 
     const [info, infoSubmit, infoChange]=useForm(
         {
@@ -73,7 +73,7 @@ function Form (){
     //   });
 
     function sendData(){
-        createResume({info: info, education: education, skills: skills, experience: experience});
+        createResume({info: info, education: education, skills: skills});
         setSubmitted(true);
     };
 
@@ -82,7 +82,7 @@ function Form (){
         infoSubmit(event)
         // educationSubmit(event)
         skillsSubmit(event)
-        experienceSubmit(event)
+        // experienceSubmit(event)
         // projectSubmit(event)
         // achivementSubmit(event)
     }
@@ -197,8 +197,8 @@ function Form (){
             <input onChange={experienceChange} type="text" name="date_attended" className="form-control" value={experience.date_attended}/>
             <label>Description/Extra Notes</label>
             <input onChange={experienceChange} type="text" name="description" className="form-control" value={experience.description}/>
-        </div> */}
-        {/* <div className="form-group" className="container">
+        </div>
+        <div className="form-group" className="container">
             <br />
             <h3>Projects</h3>
             <input type="checkbox" name="Projects" onChange={() => true}/>
